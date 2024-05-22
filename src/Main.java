@@ -49,7 +49,7 @@ Scanner scanner = new Scanner(System.in);
                  System.out.println("digite o numero da casa");
                  locacao.getUsuario().getEndereco().setNumero(scanner.nextInt());
                  break;
-             case 3:
+             case 3://
                  System.out.println("cadastro de livro");
                  System.out.println("digite o titulo do livro");
                  locacao.getLivro().setTitulo(scanner.nextLine());
