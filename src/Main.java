@@ -36,9 +36,27 @@ Scanner scanner = new Scanner(System.in);
                  break;
              case 2:
                  System.out.println("cadastro de usuario");
+                 System.out.println("digite seu nome");
+                 locacao.getUsuario().setNome(scanner.next());
+                 System.out.println("digite seu codigo de cadastro");
+                 locacao.getUsuario().setCodigo(scanner.nextInt());
+                 System.out.println("digite seu cpf");
+                 locacao.getUsuario().setCpf(scanner.nextInt());
+                 System.out.println("digite sua rua");
+                 locacao.getUsuario().getEndereco().setRua(scanner.next());
+                 System.out.println("digite seu bairro");
+                 locacao.getUsuario().getEndereco().setBairro(scanner.next());
+                 System.out.println("digite o numero da casa");
+                 locacao.getUsuario().getEndereco().setNumero(scanner.nextInt());
                  break;
              case 3:
                  System.out.println("cadastro de livro");
+                 System.out.println("digite o titulo do livro");
+                 locacao.getLivro().setTitulo(scanner.nextLine());
+                 System.out.println("digite o genero do livro");
+                 locacao.getLivro().setGenero(scanner.nextLine());
+                 System.out.println("digite o autor do livro");
+                 locacao.getLivro().setAutor(scanner.nextLine());
                  break;
              case 4:
                  System.out.println("Mostrar todos os dados do cadastro");
